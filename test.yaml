@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pro3-web
+spec:
+  selector:
+    matchLabels:
+      app: pro3-web
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: pro3-web
+    spec:
+      containers:
+      - name: pro3-web
+        image: nginx:latest
+        ports:
+        - containerPort: 80
