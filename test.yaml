@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pro3-web
+  name: pro3-web1
 spec:
   selector:
     matchLabels:
-      app: pro3-web
-  replicas: 2
+      app: pro3-web1
+  replicas: 3
   template:
     metadata:
       labels:
-        app: pro3-web
+        app: pro3-web1
     spec:
       containers:
       - name: pro3-web
