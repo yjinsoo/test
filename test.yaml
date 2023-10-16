@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: pro3-web1
-  replicas: 10
+  replicas: 5
   template:
     metadata:
       labels:
