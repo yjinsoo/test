@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pro3-web1112111
+  name: pro3-web111
 spec:
   selector:
     matchLabels:
